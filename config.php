@@ -18,8 +18,8 @@
 	// As far as I know, OTX is based on TFS_03, so make sure TFS version is configured TFS_03
 	$config['CustomVersion'] = false;
 
-	$config['site_title'] = 'Znote AAC';
-	$config['site_title_context'] = 'Because open communities are good communities. :3';
+	$config['site_title'] = 'Immortal Disorder RL Map';
+	$config['site_title_context'] = 'Website for Immortal Disorder OT - RL Map Version';
 	$config['site_url'] = "https://immortaldisorder.xyz";
 
 	// Path to server folder without "\" (or "/") at the end, ex: C:\Users\Username\Documents\GitHub\forgottenserver
@@ -360,8 +360,8 @@
 	// Town ids and names: (In RME map editor, open map, click CTRL + T to view towns, their names and their IDs.
 	// townID => 'townName' ex: [1 => 'Rookgaard']
 	$config['towns'] = array(
-		1 => 'Rookgaard',
-		2 => 'Rookgaard Tutorial Island',
+		1 => 'Venore',
+		2 => 'Thais',
 		3 => 'Island Of Destiny',
 		4 => 'Dawnport',
 		5 => "Ab'Dendriel",
@@ -394,7 +394,7 @@
 		'levelToBuyHouse' => 8,
 		// Instant buy with shop points
 		'shopPoints' => array(
-			'enabled' => true,
+			'enabled' => false,
 			// SQM count => points cost
 			'cost' => array(
 				1 => 10,
@@ -442,7 +442,7 @@
 
 	// Available towns (specify town ids, etc: (1, 2, 3); to display 3 town options (town id 1, 2 and 3).
 	// Town IDs are the ones from $config['towns'] array
-	$config['available_towns'] = array(6, 7, 8, 9);
+	$config['available_towns'] = array(2);
 
 	$config['player'] = array(
 		'base' => array(
@@ -565,7 +565,7 @@
 		'price_sqm' => '50', // price per house sqm
 	);
 
-	$config['delete_character_interval'] = '3 DAY'; // Delay after user character delete request is executed, ex: 1 DAY, 2 HOUR, 3 MONTH etc.
+	$config['delete_character_interval'] = '1 HOUR'; // Delay after user character delete request is executed, ex: 1 DAY, 2 HOUR, 3 MONTH etc.
 
 	$config['validate_IP'] = false;
 	$config['salt'] = false;
@@ -673,8 +673,7 @@
 
 	// WARNING! Account names written here will have admin access to web page!
 	$config['page_admin_access'] = array(
-		'firstaccountName',
-		'secondaccountName',
+		'admin'
 	);
 
 	// Built-in FORUM
@@ -706,7 +705,7 @@
 	// IMPORTANT! Write a character name(that exist) that will represent website bans!
 	// Or remember to create character named "God Website".
 	// If you don't do this, ban from admin panel won't work properly.
-	$config['website_char'] = 'God Website';
+	$config['website_char'] = 'Avaji';
 
 	// ---------------- \\
 	//  ADVANCED STUFF  \\
